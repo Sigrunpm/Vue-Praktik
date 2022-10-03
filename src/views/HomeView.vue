@@ -3,15 +3,21 @@
   <header>
     <MenuToppen /> 
   </header>
+ 
   
   <section id="home">
     <HeroBil />
   </section>
+ 
   
   <section id="kompetancer">
     <KompeTancer />
+</section>
+
+<section>
+    <SlideShow />
   </section>
-  
+ 
   <section id="ommig">
     <OmMig />
   </section>
@@ -41,6 +47,7 @@ import OmMig from '../components/OmMig.vue';
 import CvCv from '../components/CvCv.vue';
 import KontaktMig from '../components/KontaktMig.vue';
 import FooterFooter from '@/components/FooterFooter.vue';
+import SlideShow from '@/components/SlideShow.vue';
 
 
 export default {
@@ -52,18 +59,18 @@ export default {
     OmMig,
     CvCv,
     KontaktMig,
-    FooterFooter
+    FooterFooter,
+    SlideShow
 },
  }
 </script>
 
 <style lang="scss">  
                 @import "@/scss/colors";
-
-  
+                
   #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
+    font-family: "Playfair Display", Helvetica, Arial;
+     -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: white;
   
@@ -76,12 +83,8 @@ export default {
   body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(
-          to right,
-          $red3,
-          $black1 50%,
-          $red3,
-      );
+  
+      background-image: url("@/assets/img/bag1.png");
     
     top: 0;
     left: 0;

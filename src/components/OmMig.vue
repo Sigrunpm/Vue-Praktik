@@ -1,6 +1,7 @@
 <template>
+    <div class="tt">
     <h1 class="overskrift">Om mig</h1>
-    
+</div>
     <div class="mig">
        
            
@@ -40,7 +41,7 @@
             </div>
             </div>
             <div class="mig-left">
-                <img class="migprofil" src="@\assets\img/migs.png" alt="profil">
+                <img class="migprofil" src="@\assets\img/mid1.png" alt="profil">
             </div>
         </div>
         
@@ -73,12 +74,17 @@
                 @import "@/scss/colors";
     
             .mig {
-                background-color: rgb(27, 26, 26);
+                background-color: $black1;
                 color: white;
                 display: flex;
                 flex-direction: column;
+                width: 95%;
+                margin: 30px;
                 
                 
+            }
+            .tt {
+                margin-top: 25px;
             }
             
             .mig-left {
@@ -96,12 +102,12 @@
                 width: 80%;
                 height: auto;
                 padding: 25px;
-                padding-top: 100px; 
+                padding-top: 15px; 
                  
             }
     
             .migop {
-                color: $red1;
+                color: $one;
             }
     
             .migfix {
@@ -110,16 +116,17 @@
                 margin-top: 100px;
             }
             .menubut {
-                background-color: $red1;
-                color: white;
+                background-color: $two;
+                color: black;
                 font-weight: bolder;
+                border-radius: 10px;
                 padding: 5px 10px 5px 10px;
                 border: none;
                
             }
     
             .menubut:hover {
-                    background-color: $red3;
+                    background-color: $one;
                     
                 }
                 .overskrift {
@@ -143,6 +150,11 @@
             .overskrift {
             font-size: 4vw;
         }
+        .migprofil {
+                
+                padding-top: 150px; 
+                 
+            }
             }
            
         </style>

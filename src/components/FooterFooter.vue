@@ -2,11 +2,11 @@
     <div class="footer">
   
       <div class="contentaa">
-      <img class="logos" src="@\assets\logo1.png" alt="logo">
+      <img class="logos" src="@\assets\img/logonyt.png" alt="logo">
       </div>
   
       <div class="contentaa">
-      <h4 class="sti">Created by &copy; Copyright - SPM WEBART 2022</h4>
+      <h4 class="sti">Created by &copy; Copyright - SPM WEBARTS 2022</h4>
       </div>
   
       <div class="contentaa">
@@ -27,8 +27,7 @@
       .footer {
       display: flex;
       background-color: rgb(0, 0, 0);
-      width: 99%;
-      border: 5px solid $red4;
+      width: 109%;
       flex-direction: column;
   
   }
@@ -60,6 +59,7 @@
           .footer {
               flex-direction: row;
               justify-content: space-between;  
+              width: 100.9%;
   
           }
         

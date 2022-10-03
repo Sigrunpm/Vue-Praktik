@@ -3,12 +3,12 @@
     
     <div class="hero">
             <div class="hero-left">
-                <img class="profil" src="@\assets\img/kontakt.png" alt="profil">
+                <img class="profil" src="@\assets\img/bund2.png" alt="profil">
             </div>
             <div class="hero-right">
                 <div class="fix">
                 <div  class="hero-left2">
-      <h1>kontakt mig via</h1>
+      <h1 class="hh">kontakt mig via</h1>
      <div>
         <div class="hero-left5">
 
@@ -20,7 +20,7 @@
 
           <h3><font-awesome-icon icon="fa-solid fa-phone" class="se" /> tlf: +45 42 31 36 96</h3>
            </div>
-           <h1>Jeg glæder mig til at høre fra jer!</h1>
+           <h1 class="hh">Jeg glæder mig til at høre fra jer!</h1>
 
         </div>
 
@@ -60,10 +60,12 @@
                 @import "@/scss/colors";
     
             .hero {
-                background-color: rgb(27, 26, 26);
+                background-color: $black1;
                 color: white;
                 display: flex;
                 flex-direction: column;
+                width: 95%;
+                margin: 30px;
                 
                 
             }
@@ -83,15 +85,14 @@
             }
     
             .profil {
-                width: 50%;
+                width: 90%;
                 height: auto;
                 padding: 25px;
-                padding-top: 100px; 
                  
             }
     
             .op {
-                color: $red1;
+                color: $one;
             }
     
             .fix {
@@ -114,32 +115,43 @@
 
                 .hero-left2 {
             background-color: $black1;
-            width: 94%;
-            height: 400px;
             text-align: center;
-            border: 5px solid $red4;
+            border: 2px solid $one;
+            border-radius: 10px;
             margin: 10px;
-            margin-top: 30px;
+            
+            width: 120%;
+   
+   margin-left: -30px;
         }
         .hero-left5 {
-            background-color: $red3;
-            color: white;
-            width: 94%;
+            background-color: $one;
+            color: black;
+            width: 90%;
             height: auto;
             text-align: center;
-            border: 5px solid $red4;
+            padding: 5px;
+            border-radius: 10px;
             margin: 6px;
             margin-top: 30px;
+        }
+        .hh {
+            color: $two;
         }
 
     
             @media only screen and (min-width: 750px) {
             .hero {
                 flex-direction: row;
+                
             }
             .hero-left {
                 width: 50%;
                 height: auto;
+            }
+            .hero-left5 {
+                width: 94%;
+                
             }
             .overskrift {
             font-size: 4vw;
@@ -148,6 +160,11 @@
                 width: 50%;
                 height: auto;
             }
+            .hero-left2 {
+                margin-top: 30px;
+                width: 94%;
+
+}
             }
            
         </style>

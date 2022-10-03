@@ -15,7 +15,7 @@
             <div class="li">
           <h3 class="overs">Hvor har jeg været ansat:</h3>          
             <li>2016-2018 Leder hos Jensens Bøfhus.</li>
-            <li>2015-2016: Tjener hos PizzaPizza Rosengårdcentret.</li>
+            <li>2015-2016: Tjener hos PizzaPizza.</li>
             <li>2012-2016: Tjener og bartender på Pianobar.</li>
             <h3 class="overs">INDEN-2012:</h3>
             <li>Bartender/tjener i Skotland.</li>
@@ -26,10 +26,8 @@
             <li>Rengøring</li>
             <li>Pølsevogn</li>
             <li>MM... </li>
-            <p>Jeg har altid holdt meget af at arbejde. <br>
-                Jeg fik mit første job da jeg var 10år, som avisbud og inden da bankede jeg på døre i nabolaget,
-                for at høre om jeg kunne hjælpe med noget for penge, eller samlede flasker. <br> <br>
-                Selvom meget af min erfaring ikke kan overføres direkte, til denne nye karriere vej, så er jeg sikker 
+            <p>
+                Selvom meget af min erfaring ikke kan overføres direkte, til denne nye karriere retning, så er jeg sikker 
                 på at der er meget jeg kan tage med mig.
                  
                 
@@ -54,7 +52,6 @@
              Jeg kæmpede en kamp for at få folk til at købe vores varer direkte fra mig, men det lykkes mig ikke <br> 
              - derfor er jeg her i dag. <br><br>
              Jeg har lært rigtig meget som selvstændig, der er rigtig meget arbejde bag hver burrito. <br>
-             Daglig forberedelse - rengøring - vagtplan - regnskab - indkøb (råvarer, emballage, import) - aftaler - markedsføring - skabe content - konkurrenter m.m.
           </p>
         </div>
         </div>
@@ -94,59 +91,62 @@
         .overskrift1 {
             text-align: center;
             font-size: 8vw;
+            color: white;
         }
         .li {
     text-align: left;
     margin-left: 50px;
 }
          .hero2 {
-            background-color: rgb(27, 26, 26);
             color: white;
             display: flex;
             flex-direction: column;
+            widows: 95%;
+            margin: 30px;
             
         }
         
         .hero-left2 {
             background-color: $black1;
-            width: 94%;
+            width: 99%;
             height: auto;
             text-align: center;
-            border: 5px solid $red4;
-            margin: 10px;
+            border: 2px solid $one;
             margin-top: 30px;
+            margin: 20px;
+            border-radius: 10px;
         }
         .hero-left3 {
-            background-color: rgb(19, 18, 18);
             color: white;
             width: 94%;
             height: auto;
             text-align: center;
-            border: 5px solid $red4;
             margin: 6px;
             margin-top: 30px;
         }
         .overs {
-            color: white;
+            color: $one;
+        }
+        h1 {
+            color: $two;
         }
         .hero-left4 {
-            background-color: rgb(19, 18, 18);            color: white;
             width: 94%;
             height: auto;
             text-align: center;
-            border: 5px solid $red4;
             margin: 6px;
             margin-top: 30px;
         }
 
         .hero-left5 {
-            background-color: rgb(19, 18, 18);            color: white;
             width: 94%;
             height: auto;
             text-align: center;
-            border: 5px solid $red4;
             margin: 6px;
             margin-top: 30px;
+        }
+        .se {
+            font-size: 40px;
         }
 
         @media only screen and (min-width: 750px) {
@@ -158,14 +158,15 @@
             height: auto;
         }
         .hero-left3 {
-            width: 40%;
+            width: 50%;
             height: auto;
             float: left;
         }
         .hero-left4 {
-            width: 40%;
+            width: 50%;
             height: auto;
             float: right;
+            
         }
        
         .overskrift1 {

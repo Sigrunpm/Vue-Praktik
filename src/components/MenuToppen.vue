@@ -4,7 +4,7 @@
     <font-awesome-icon icon="fa-solid fa-sliders" class="se" @click="showMenu()" />
   <div class="nav-content" :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'">
   <div class="logo">
-    <img class="logos" style="float:left" src="@\assets\logo1.png" alt="logo">
+    <img class="logos" style="float:left" src="@\assets\img/logonyt.png" alt="logo">
 
   </div>
   <ul class="nav-items">
@@ -43,10 +43,10 @@
     @import "@/scss/colors";
 
   .nav-menu {
-  background-color: rgb(0, 0, 0);
+    
+  background-color: $black1;
   position: fixed;
-  width: 99%;
-  border: 5px solid $red4;
+  width: 100%;
   }
   .nav-content {
   display: flex;
@@ -65,12 +65,15 @@
   li {
   padding: 0 10px;
   button {
-  background-color: black;
-  color: white;
-  font-weight: bolder;
+    font-family: "Playfair Display", Helvetica, Arial;
+font-weight: bolder;
+    background-color: transparent;
+  color: $one;
+  border: none;
+  font-size: 1rem;
   }
   :hover {
-  color: $red1;
+  color: white;
     
   }
   }
@@ -89,7 +92,7 @@
   .nav-menu {
   padding-top: 10px;
   position: fixed;
-  width: 98%;
+  width: 100%;
   }
   .open-menu {
   opacity: 1;
@@ -105,10 +108,20 @@
   z-index: 100;
   position: relative;
   transition: all 0.2s ease-out;
+  align-items: flex-start;
+  
+  .logos {
+    margin-left: 15px;
   }
+  }
+  
   .nav-items {
   flex-direction: column;
+  align-items: flex-start;
+ 
   }
+  
+  
   .se {
   display: block;
   text-align: right;

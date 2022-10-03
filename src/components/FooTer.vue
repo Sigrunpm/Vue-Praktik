@@ -27,8 +27,7 @@
     .footer {
     display: flex;
     background-color: rgb(0, 0, 0);
-    width: 99%;
-    border: 5px solid $red4;
+    width: 110%; 
     flex-direction: column;
 
 }
@@ -60,6 +59,8 @@
         .footer {
             flex-direction: row;
             justify-content: space-between;  
+            width: 110%;
+
 
         }
       

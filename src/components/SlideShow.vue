@@ -1,42 +1,60 @@
 <template>
-      <div>
+   <div class="alt">
+    
+  <div>
+    <div id="slides">
+
     <transition-group name="fade" tag="div">
       <div v-for="i in [currentIndex]" :key="i">
         <img :src="currentImg" />
       </div>
     </transition-group>
-    <a class="prev" @click="prev" href="#">&#10094; Previous</a>
-    <a class="next" @click="next" href="#">&#10095; Next</a>
   </div>
+    <a class="prev" @click="prev" id="slides">&#10094; Previous</a>
+    <a class="next" @click="next" id="slides">Next &#10095;</a>
+
+  </div>
+</div>
   </template>
 
-  <script>    
-
+  <script>
   export default {
-    
+    name: "SliderShow",
     data() {
       return {
         images: [
-        "https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg",
-        "https://cdn.pixabay.com/photo/2016/02/17/23/03/usa-1206240_1280.jpg",
-        "https://cdn.pixabay.com/photo/2016/12/04/19/30/berlin-cathedral-1882397_1280.jpg"
-          
+          "http://webarts.dk/galleri/7.png",
+          "http://webarts.dk/galleri/9.png",
+          "http://webarts.dk/galleri/10.png",
+          "http://webarts.dk/galleri/1.png",
+          "http://webarts.dk/galleri/12.png",
+          "http://webarts.dk/galleri/14.png",
+          "http://webarts.dk/galleri/19.png",
+          "http://webarts.dk/galleri/15.png",
+          "http://webarts.dk/galleri/16.png",
+          "http://webarts.dk/galleri/20.png",
+          "http://webarts.dk/galleri/17.png",
+          "http://webarts.dk/galleri/18.png",
+          "http://webarts.dk/galleri/11.png",
+          "http://webarts.dk/galleri/13.png",
+          "http://webarts.dk/galleri/2.png",
+          "http://webarts.dk/galleri/4.png",
+          "http://webarts.dk/galleri/5.png",
+          "http://webarts.dk/galleri/6.png",
+          "http://webarts.dk/galleri/8.png",
 
-        
+
+           
         ],
-        timer: null,
+        
         currentIndex: 0
       };
     },
   
-    mounted: function() {
-      this.startSlide();
-    },
+   
   
     methods: {
-      startSlide: function() {
-        this.timer = setInterval(this.next, 4000);
-      },
+      
   
       next: function() {
         this.currentIndex += 1;
@@ -57,22 +75,31 @@
   <style lang="scss" scoped>
     @import "@/scss/colors";
 
+ 
 
-
-
-
-img {
-  height:auto;
-  width:50%
-  di
+.alt {
+  
+  width: 99%;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
+
+  img {
+  height:auto;
+  width: 95%;
+ margin: 30px;
+
+  
+}
+
 
 .prev, .next {
   cursor: pointer;
   position: absolute;
-  margin-top: -150px;
   width: auto;
   padding: 16px;
+  margin: 16px;
+  margin-top: -300px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -91,7 +118,17 @@ img {
 }
 
 .prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.9);
+  background-color: $one;
 }
 
-</style>
+@media screen and (max-width: 768px) {
+
+.prev, .next {
+ padding: 0px;
+  margin-top: -100px;
+   }
+ 
+
+  }
+   
+  </style>

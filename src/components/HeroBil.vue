@@ -3,7 +3,7 @@
 
 <div class="hero">
         <div class="hero-left">
-            <img class="profil" src="@\assets\mig.png" alt="profil">
+            <img class="profil" src="@\assets\img/top2.png" alt="profil">
         </div>
         <div class="hero-right">
             <div class="fix">
@@ -11,7 +11,7 @@
             <h1 class="mel">Jeg studerer Multimediedesign på UCL</h1>
             <p class="ned">
               Jeg søger en praktikplads, i perioden 01.02.2023-30.04.2023 <br>
-              Hvis I er interesserede i at have, en multimediedesigner praktikant med UI som valgfag, så skal i have mig.
+              Hvis I er interesserede i at have, en multimediedesigner praktikant med UI som valgfag, så skal i have mig. <br> <br>
             </p>
             <button class="menubut" @click="isShow = !isShow">Krav til Praktiksted</button>
             
@@ -67,11 +67,12 @@
             @import "@/scss/colors";
 
         .hero {
-            background-color: rgb(27, 26, 26);
+            background-color: $black1;
             color: white;
             display: flex;
             flex-direction: column;
             height: auto;
+            width: 109%;
             
             
         }
@@ -97,7 +98,7 @@
         }
 
         .op {
-            color: $red1;
+            color: $one;
         }
 
         .fix {
@@ -106,22 +107,27 @@
             margin-top: 100px;
         }
         .menubut {
-            background-color: $red1;
-            color: white;
+            background-color: $two;
+            color: $black1;
             font-weight: bolder;
             padding: 5px 10px 5px 10px;
             border: none;
+            border-radius: 10px;
            
+        }
+        .mel {
+            color: white;
         }
 
         .menubut:hover {
-                background-color: $red3;
+                background-color: $one;
                 
             }
 
         @media only screen and (min-width: 750px) {
         .hero {
             flex-direction: row;
+            width: 100.9%;
         }
         .hero-left {
             width: 50%;
