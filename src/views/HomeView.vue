@@ -13,10 +13,6 @@
   <section id="kompetancer">
     <KompeTancer />
 </section>
-
-<section>
-    <SlideShow />
-  </section>
  
   <section id="ommig">
     <OmMig />
@@ -47,7 +43,6 @@ import OmMig from '../components/OmMig.vue';
 import CvCv from '../components/CvCv.vue';
 import KontaktMig from '../components/KontaktMig.vue';
 import FooterFooter from '@/components/FooterFooter.vue';
-import SlideShow from '@/components/SlideShow.vue';
 
 
 export default {
@@ -60,7 +55,7 @@ export default {
     CvCv,
     KontaktMig,
     FooterFooter,
-    SlideShow
+    
 },
  }
 </script>
