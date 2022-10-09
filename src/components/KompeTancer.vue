@@ -1,7 +1,7 @@
 <template>
 
    
-        <h1 class="overskrift">Kompetencer</h1>
+        <h1 class="overskrift">Mine Kompetencer</h1>
    
 
 <div class="hero1">
@@ -12,14 +12,16 @@
         <font-awesome-icon icon="fa-solid fa-heart" class="se" />
           <h3 class="two">Jeg har erfaring med <br> følgende kode:</h3>
           <div class="li">
+            <ul>
          <li>HTML</li>
          <li>CSS</li>
          <li>SASS</li>
          <li>JavaScript</li>
          <li>Vue</li>
-         <li>vuetify</li> 
+         <li>Vuetify</li> 
          <li>PHP</li> 
-         
+         <li>SEO</li>
+        </ul>
          <br>
         </div>
          
@@ -31,12 +33,17 @@
         <font-awesome-icon icon="fa-solid fa-palette" class="se" />
           <h3 class="two">Jeg har erfaring med følgende Adobe programmer:</h3>
           <div class="li">
+            <ul>
          <li>InDesign</li>
-         <li>Illustraitor</li>
+         <li>Illustrator</li>
          <li>Animate</li>
          <li>XD</li>
          <li>Lightroom</li>
-         <li>Photoshop</li> <br>
+         <li>Photoshop</li>
+         <li>Premiere Rush</li>
+         <li>After Effects</li>
+         <li>Premiere Pro</li> <br>
+        </ul>
         </div>
            </div></div>
 
@@ -44,18 +51,24 @@
       <h1 class="one">Projekter</h1>
      <div>
         <font-awesome-icon icon="fa-solid fa-user-graduate" class="se" />
-          <h3 class="two">Vi har arbejdet med følgende 6 projekter:</h3>
+          <h3 class="two">Tidligere udarbejdede projekter:</h3>
+          <p>Links åbner på ny fane</p>
           <div class="li">
-            <li>  Datingapp </li>
-              <li>   installations projekt for Naturama </li>
-              <li>   Portfolio i HTML og CSS </li>
-              <li>   StudyBuddy app til UCL </li>
-              <li>   markedsføringsstrategi og hjemmeside, til butik Pulvis </li>
-              <li>   Markedsføringsstrategi og hjemmeside, for produktserien Wiser, by Schneider Electric. </li> <br>
-              <li>Mit første selvstændige projekt, er denne hjemmeside:
-                <a class="link" href="https://tankereform.dk/">Tankereform.dk</a>
-              </li> 
-              <li>Denne side er kodet med VUE</li><br><br>
+            <ul>
+            <li>Første Eksamensprojekt - Portfolio. <br> <a href="https://webarts.dk/praktik/portfolio/index.html" target="_blank">Se projekt 1</a></li>
+                <li>Andet Eksamensprojekt - Fremhæv produktserien wiser. <br> <a href="https://webarts.dk/praktik/wiser/" target="_blank">Se projekt 2</a> <br> <a href="https://webarts.dk/praktik/wiser-stileguide/" target="_blank">Se Stileguide</a></li>
+                
+                <li>Galleri - Fra 1 og 2 Semester. <br> <a href="https://webarts.dk/praktik/galleri/" target="_blank">Galleri</a></li>
+                
+
+                <li>Eget projekt - Hjemmeside i wordpress. <br> <a href="https://tankereform.dk/" target="_blank">Tankereform</a></li>
+                
+
+                <li>Denne Portfolio er kodet i VUE</li>
+               
+            </ul>
+
+           
         </div>
         
            </div>
@@ -69,33 +82,21 @@
         </div>
         
     </div>
+
+    <h1 class="overskrift">Kommende projekter</h1>
+
     <div class="hero1">
     <div class="hero-left2">
-            <h1 class="one">Projekterne indeholder</h1>
-            <h3 class="two">Step by step:</h3>
-
+            <h1 class="one">Dette semester</h1>
+            <h3 class="two">Er mine personlige projekter:</h3>
             <div class="li">
+                <p> 
+                    Det er mit mål at nå at lave et teama til wordpress i PHP, til min proces port folio, som er min personlige dokumentation for deltagelse i undervisningen. <br><br>
+                Jeg vil færdiggøre hjemmesiden tankereform, som pt. er bygget med DIVI, om muligt vil jeg kode den selv. <br>
+            Derudover vil jeg bruge tid på at forberede mig, i de værktøjer/programmer virksomheden anvender, hvor jeg kommer i praktik.</p>
+                
 
-                <p>Teamet arbejder med SCRUM og Design Thinking, som metode. <br> <br>
-
-              1. Vi starter med at udarbejde en problemformulering, i samarbejde med klienten.
-  <br> <br>
-                                2. Discovery - Primær og sekundær research.
- <br> <br>
-                                 3. Interpretation - Her anvendes alle relevante teorier, metoder og modeller, så som - BMC-PESTLE-GOLDENCIRKEL-PERSONA-SMP/SMUKmodellen-INDHOLDSSTRATEGI-SWOT/TWOT-VÆRDITRAPPEN-TONE OF VOICE M.M. 
-  <br> <br>
-                                4. Ideation - Hvordan fortæller vores research os, at problemstillingen skal løses? 
- <br> <br>
-                              5. Experimentation - !Byg-test-byg-test! - Paper prototyping - Lo-Fi wireframes, Scenario mapping, userflow, wireflow, cardsorting, UI, UX, thinkaloud test m.m. 
-<br> <br>
-                               6. Evolution - Hvad har vi valgt at gå videre med og hvorfor. <br><br>
- 
- 7. Konklusion.
-             <br></p>
-             
-               
-
-
+           
          
         </div>
            
@@ -107,17 +108,14 @@
            
         
             <h1 class="one">Dette semester</h1>
-            <h3 class="two">Vil vi arbejde med:</h3>
+            <h3 class="two">Projekt:</h3>
 
             <div class="li">
 
-            <p>Dette semester arbejde vi med et projekt, vi har fundet en klient "Thai by Noo". <br><br> Da vi er en gruppe på 5, 
-                der alle har valgt UI som valgfag, vil vi fokusere på at lave deres egen bestillings side. <br><br> 
-                Derudover vil vi forny deres nuværende design og udearbejde en strategi for, hvordan de skal få mere salg på deres egen siden, 
-                frem for portaler som Wolt og Hungry. <br><br>
-            Hjemmesiden vil blive kodet i VUE eller REACT. <br> <br>
-
-        Personligt vil jeg forsøge at lave min proces port folio, som er min personlige dokumentation for deltagelse i undervisningen, i PHP</p>
+            <p>Klient er restaurant - Thai by Noo. <br> 
+                Vores opgave er at få mere salg, fra Thai by Noo's egen hjemmeside. <br>
+                Redesign af hjemmeside - Markedsføringsstrategi - Ny webshop (De anvender pt Eat more)
+                </p>
         </div></div></div>
 
    
@@ -137,71 +135,98 @@
     <style lang="scss" scoped>
 @import "@/scss/colors";
         .overskrift {
+            color: $one;
             text-align: center;
             font-size: 8vw;
          
         }
+        ul {
+  list-style: none;
+}
+        ul li::before {
+            content: "\2022";
+                color: $four1;
+                font-size: 1.5em;
+                font-weight: bolder; 
+  display: inline-block; 
+  width: 1em; 
+  margin-left: -1em;
+            }
        
 .li {
     text-align: left;
     margin-left: 50px;
     margin-right: 50px;
+    color: $one;
+    font-weight: bolder;
     a {
     font-size: 15px;
-    color: $one;
+    color: $two;
+    background-color: $four;
+    border-radius: 10px;
+    padding: 5px;
+    text-decoration: none;
+  
+    
+    
 }
 }
-
+a:hover {
+        background-color: $four1;
+    }
 
          .hero1 {
-            color: white;
+            color: $one;
             display: flex;
             flex-direction: column;
-            width: 100%;
             
             
         }
         .one {
-            color: $one;
+            color: $four1;
         }
         .two {
-            color: $two;
+            color: $four1;
         }
         
         .hero-left1 {
-            width: 94%;
             height: auto;
+            line-height: 30px;
             text-align: center;
-            border: 2px solid $one;
             padding: 10px;
     margin: 20px;
-            border-radius: 10px;
-         background-color: $black1;
-         color: white;
-            
-            
-          
+         color: $one;
+         border-left: none;
+            border-bottom: 2px solid $tree1;
+            border-bottom-right-radius: 100px;
+            border-top-right-radius: 100px;
+            background-image: linear-gradient(to bottom right, $four2, $four2, $tree1, $four2);
+        
         }
+
         .hero-left2 {
-            width: 94%;
             height: auto;
             text-align: center;
-            border: 2px solid $one;
-            border-radius: 10px;
+            line-height: 30px;
+
             padding: 10px;
     margin: 20px;
-         background-color: $black1; 
-        }
+    border-left: none;
+            border-bottom: 2px solid $tree1;
+            border-bottom-right-radius: 100px;
+            border-top-right-radius: 100px;
+            background-image: linear-gradient(to bottom right, $four2, $four2, $tree1, $four2);        }
         .hero-left3 {
-            width: 94%;
             height: auto;
             text-align: center;
-            border: 2px solid $one;
-            border-radius: 10px;
             padding: 10px;
     margin: 20px;
-         background-color: $black1; 
-        }
+    line-height: 30px;
+    border-left: none;
+            border-bottom: 2px solid $tree1;
+            border-bottom-right-radius: 100px;
+            border-top-right-radius: 100px;
+            background-image: linear-gradient(to bottom right, $four2, $four2, $tree1, $four2);        }
         .parent {
 display: grid;
 grid-template-columns: repeat(4, 1fr);
@@ -212,18 +237,10 @@ background-color: rgb(27, 26, 26);
 align-items: center; 
 }
 
-.profil1 {
-            width: 90%;
-            height: auto;
-       
-        }
-      
-        .link {
-            color: white;
-            font-size: 1vw;
-        } 
+
         .se {
             font-size: 40px;
+            color: $one;
         }
 
         @media only screen and (min-width: 750px) {
@@ -234,12 +251,33 @@ align-items: center;
         .hero-left1 {
             width: 50%;
             height: auto;
+            border-bottom: none;
+            border-left: 2px solid $four;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 100px;
+            background-image: linear-gradient(to bottom left, $four2, $four2, $tree1);
+           
         }
         .hero-left2 {
-            width: 98%;
+            width: 100%;
             height: auto;
+            border-bottom: none;
+            border-left: 2px solid $four;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 100px;
+            background-image: linear-gradient(to bottom left, $four2, $four2, $tree1);
+           
         }
-        
+        .hero-left3 {
+            width: 100%;
+            height: auto;
+            border-bottom: none;
+            border-left: 2px solid $four;
+            border-bottom-right-radius: 0px;
+            border-bottom-left-radius: 100px;
+            background-image: linear-gradient(to bottom left, $four2, $four2, $tree1);
+           
+        }
         .overskrift {
             font-size: 4vw;
         }

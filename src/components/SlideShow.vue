@@ -1,105 +1,84 @@
 <template>
-   <div class="alt">
-    
   <div>
-    <div id="slides">
-
     <transition-group name="fade" tag="div">
       <div v-for="i in [currentIndex]" :key="i">
         <img :src="currentImg" />
       </div>
     </transition-group>
+    <a class="prev" @click="prev" href="#">&#10094; Previous</a>
+    <a class="next" @click="next" href="#">&#10095; Next</a>
   </div>
-    <a class="prev" @click="prev" id="slides">&#10094; Previous</a>
-    <a class="next" @click="next" id="slides">Next &#10095;</a>
+</template>
+<script>
+export default {
+  name: "SliderShow",
+  data() {
+    return {
+      images: [
+        "https://cdn.pixabay.com/photo/2015/12/12/15/24/amsterdam-1089646_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/02/17/23/03/usa-1206240_1280.jpg",
+        "https://cdn.pixabay.com/photo/2015/05/15/14/27/eiffel-tower-768501_1280.jpg",
+        "https://cdn.pixabay.com/photo/2016/12/04/19/30/berlin-cathedral-1882397_1280.jpg"
+      ],
+      timer: null,
+      currentIndex: 0
+    };
+  },
 
-  </div>
-</div>
-  </template>
+  mounted: function() {
+    this.startSlide();
+  },
 
-  <script>
-  export default {
-    name: "SliderShow",
-    data() {
-      return {
-        images: [
-          "http://webarts.dk/galleri/7.png",
-          "http://webarts.dk/galleri/9.png",
-          "http://webarts.dk/galleri/10.png",
-          "http://webarts.dk/galleri/1.png",
-          "http://webarts.dk/galleri/12.png",
-          "http://webarts.dk/galleri/14.png",
-          "http://webarts.dk/galleri/19.png",
-          "http://webarts.dk/galleri/15.png",
-          "http://webarts.dk/galleri/16.png",
-          "http://webarts.dk/galleri/20.png",
-          "http://webarts.dk/galleri/17.png",
-          "http://webarts.dk/galleri/18.png",
-          "http://webarts.dk/galleri/11.png",
-          "http://webarts.dk/galleri/13.png",
-          "http://webarts.dk/galleri/2.png",
-          "http://webarts.dk/galleri/4.png",
-          "http://webarts.dk/galleri/5.png",
-          "http://webarts.dk/galleri/6.png",
-          "http://webarts.dk/galleri/8.png",
-
-
-           
-        ],
-        
-        currentIndex: 0
-      };
+  methods: {
+    startSlide: function() {
+      this.timer = setInterval(this.next, 4000);
     },
-  
-   
-  
-    methods: {
-      
-  
-      next: function() {
-        this.currentIndex += 1;
-      },
-      prev: function() {
-        this.currentIndex -= 1;
-      }
+
+    next: function() {
+      this.currentIndex += 1;
     },
-  
-    computed: {
-      currentImg: function() {
-        return this.images[Math.abs(this.currentIndex) % this.images.length];
-      }
+    prev: function() {
+      this.currentIndex -= 1;
     }
-  };
-  </script>
+  },
 
-  <style lang="scss" scoped>
-    @import "@/scss/colors";
+  computed: {
+    currentImg: function() {
+      return this.images[Math.abs(this.currentIndex) % this.images.length];
+    }
+  }
+};
+</script>
 
- 
-
-.alt {
-  
-  width: 99%;
-  margin-bottom: 20px;
-  margin-top: 20px;
+<style lang="scss" scoped>
+  .fade-enter-active,
+.fade-leave-active {
+  transition: all 0.9s ease;
+  overflow: hidden;
+  visibility: visible;
+  position: absolute;
+  width:100%;
+  opacity: 1;
 }
 
-  img {
-  height:auto;
-  width: 95%;
- margin: 30px;
-
-  
+.fade-enter,
+.fade-leave-to {
+  visibility: hidden;
+  width:100%;
+  opacity: 0;
 }
 
+img {
+  height:600px;
+  width:100%
+}
 
 .prev, .next {
   cursor: pointer;
   position: absolute;
+  top: 40%;
   width: auto;
   padding: 16px;
-  margin: 16px;
-  margin-top: -300px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -118,17 +97,6 @@
 }
 
 .prev:hover, .next:hover {
-  background-color: $one;
+  background-color: rgba(0,0,0,0.9);
 }
-
-@media screen and (max-width: 768px) {
-
-.prev, .next {
- padding: 0px;
-  margin-top: -100px;
-   }
- 
-
-  }
-   
-  </style>
+</style>

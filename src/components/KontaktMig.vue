@@ -3,7 +3,7 @@
     
     <div class="hero">
             <div class="hero-left">
-                <img class="profil" src="@\assets\img/bund2.png" alt="profil">
+                <img class="profil" src="@\assets\img/kontaktmigny.png" alt="profil">
             </div>
             <div class="hero-right">
                 <div class="fix">
@@ -60,74 +60,55 @@
                 @import "@/scss/colors";
     
             .hero {
-                background-color: $black1;
-                color: white;
+                line-height: 30px;
+            border-bottom: 2px;
+            background-image: linear-gradient(to bottom right, $one, $four, $tree1, $two1);
+                color: $one;
                 display: flex;
                 flex-direction: column;
-                width: 95%;
-                margin: 30px;
                 
                 
             }
             .overskrift {
+                color: $one;
             text-align: center;
             font-size: 8vw;
         }
             .hero-left {
-                width: 100%;
                 height: auto;
                 text-align: center;
             }
     
             .hero-right {
-                width: 100%;
                 height: auto;
             }
     
             .profil {
-                width: 90%;
+                width: 48%;
                 height: auto;
-                padding: 25px;
+                padding-top: 25px;
                  
             }
     
             .op {
-                color: $one;
+                color: $four;
             }
     
-            .fix {
-                margin: 40px;
-                padding: 25px;
-            }
-            .menubut {
-                background-color: $red1;
-                color: white;
-                font-weight: bolder;
-                padding: 5px 10px 5px 10px;
-                border: none;
-               
-            }
-    
-            .menubut:hover {
-                    background-color: $red3;
-                    
-                }
+            
+           
 
                 .hero-left2 {
-            background-color: $black1;
+            background-color: $one;
             text-align: center;
             border: 2px solid $one;
             border-radius: 10px;
             margin: 10px;
             
-            width: 120%;
    
-   margin-left: -30px;
         }
         .hero-left5 {
-            background-color: $one;
-            color: black;
-            width: 90%;
+            background-color: $tree1;
+            color: $two;
             height: auto;
             text-align: center;
             padding: 5px;

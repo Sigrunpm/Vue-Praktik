@@ -11,7 +11,6 @@
   <li><button text @click="scroll('home'), showMenu()">Home</button></li>
   <li><button text @click="scroll('kompetancer'), showMenu()">Kompetencer</button></li>
   <li><button text @click="scroll('ommig'), showMenu()">Om mig</button></li>
-  <li><button text @click="scroll('cv'), showMenu()">CV</button></li>
   <li><button text @click="scroll('kontakt'), showMenu()">Kontakt</button></li>  
 </ul>
 </div>
@@ -44,7 +43,7 @@
 
   .nav-menu {
     
-  background-color: $black1;
+  background-color: $one;
   position: fixed;
   width: 100%;
   }
@@ -68,12 +67,14 @@
     font-family: "Playfair Display", Helvetica, Arial;
 font-weight: bolder;
     background-color: transparent;
-  color: $one;
+    color: $two;
   border: none;
   font-size: 1rem;
+  
   }
   :hover {
-  color: white;
+    color: $four;
+  
     
   }
   }
@@ -96,7 +97,7 @@ font-weight: bolder;
   }
   .open-menu {
   opacity: 1;
-  height: 150px;
+  height: 200px;
   }
   .closed-menu {
   opacity: 0;
@@ -118,7 +119,9 @@ font-weight: bolder;
   .nav-items {
   flex-direction: column;
   align-items: flex-start;
- 
+ button {
+  margin-top: 10px;
+ }
   }
   
   
@@ -126,7 +129,7 @@ font-weight: bolder;
   display: block;
   text-align: right;
   padding: 0px 10px 10px 10px;
-  font-size: 25px;
+  font-size: 30px;
   }
   }
   </style>

@@ -3,15 +3,15 @@
 
 <div class="hero">
         <div class="hero-left">
-            <img class="profil" src="@\assets\img/top2.png" alt="profil">
+            <img class="profil" src="@\assets\img/herony.png" alt="profil">
         </div>
         <div class="hero-right">
             <div class="fix">
             <h3 class="op">Hej! Mit navn er Sigrun Mouritsen</h3>
             <h1 class="mel">Jeg studerer Multimediedesign på UCL</h1>
-            <p class="ned">
-              Jeg søger en praktikplads, i perioden 01.02.2023-30.04.2023 <br>
-              Hvis I er interesserede i at have, en multimediedesigner praktikant med UI som valgfag, så skal i have mig. <br> <br>
+            <p>
+              Jeg søger en praktikplads, i perioden d. 01 Feb. 2023 - d. 30 Mar. 2023 <br>
+              Hvis I er interesserede i at have, en multimediedesigner praktikant med UI som valgfag, er jeg den rette. <br> <br>
             </p>
             <button class="menubut" @click="isShow = !isShow">Krav til Praktiksted</button>
             
@@ -19,9 +19,9 @@
             <section class="hero" v-show="isShow">
            
             
-            <div>
+            <div class="ned">
             <h1 class="mel">Hvilke krav stiller UCL?</h1>
-            <p class="ned">
+            <p>
               Uddannelsen forventer at jeg finder en relevant praktikplads, indenfor området - Multimediedesign.
               Praktikstedet skal tilbyde et læringsmiljø, som introducerer mig for livet på arbejdsmarkedet. <br> 
               Min vejleder vil komme på besøg, en enkelt gang og snakke om hvordan det går. 
@@ -67,67 +67,83 @@
             @import "@/scss/colors";
 
         .hero {
-            background-color: $black1;
-            color: white;
+            color: $one;
             display: flex;
             flex-direction: column;
             height: auto;
-            width: 109%;
-            
-            
+            font-weight: bolder;
+            line-height: 30px;
+            border-bottom: 2px;
+            background-image: linear-gradient(to bottom right, $one, $four, $tree1, $two1);
+            border-bottom-right-radius: 200px; 
+            .ned {
+                background-color: $four2;
+                padding: 10px;
+                border-left: 2px solid $four;
+                border-bottom: 2px solid $four;
+                border-bottom-right-radius: 100px;
+                
+
+            }
         }
         
         .hero-left {
-            width: 100%;
+            
             height: auto;
             text-align: center;
             
         }
 
         .hero-right {
-            width: 100%;
+            
             height: auto;
         }
 
         .profil {
             width: 80%;
             height: auto;
-            padding: 25px;
-            padding-top: 100px; 
-             
+            margin: 25px;
+            margin-top: 100px;
+            border-bottom: 50px solid $one;
+            border-radius: 100%; 
+            background-image: linear-gradient($one, $four1, $one, $one);
+
         }
 
         .op {
-            color: $one;
+            color: $four1;
+            font-size: 1.5em;
         }
 
         .fix {
             margin: 40px;
             padding: 25px;
-            margin-top: 100px;
+            margin-top: -10px;
         }
-        .menubut {
-            background-color: $two;
-            color: $black1;
+        .menubut { 
+            background-color: $four;
+            color: $two;
             font-weight: bolder;
-            padding: 5px 10px 5px 10px;
+            padding: 10px 15px 10px 15px;
             border: none;
             border-radius: 10px;
            
         }
         .mel {
-            color: white;
+            color: $one;
+            font-size: 2em;
         }
 
         .menubut:hover {
-                background-color: $one;
+                background-color: $four1;
                 
             }
+           
 
         @media only screen and (min-width: 750px) {
         .hero {
             flex-direction: row;
-            width: 100.9%;
+            
         }
         .hero-left {
             width: 50%;
@@ -136,6 +152,11 @@
         .hero-right {
             width: 50%;
             height: auto;
+        }
+        .fix {
+            margin: 40px;
+            padding: 25px;
+            margin-top: 100px;
         }
         }
        

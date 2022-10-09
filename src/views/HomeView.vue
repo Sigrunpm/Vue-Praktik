@@ -4,11 +4,9 @@
     <MenuToppen /> 
   </header>
  
-  
   <section id="home">
     <HeroBil />
   </section>
- 
   
   <section id="kompetancer">
     <KompeTancer />
@@ -16,10 +14,6 @@
  
   <section id="ommig">
     <OmMig />
-  </section>
-
-  <section id="cv">
-    <CvCv />
   </section>
 
   <section id="kontakt">
@@ -40,7 +34,6 @@ import MenuToppen from '@/components/MenuToppen.vue';
 import HeroBil from '@/components/HeroBil.vue';
 import KompeTancer from '@/components/KompeTancer.vue';
 import OmMig from '../components/OmMig.vue';
-import CvCv from '../components/CvCv.vue';
 import KontaktMig from '../components/KontaktMig.vue';
 import FooterFooter from '@/components/FooterFooter.vue';
 
@@ -52,10 +45,9 @@ export default {
     HeroBil,
     KompeTancer,
     OmMig,
-    CvCv,
+    
     KontaktMig,
     FooterFooter,
-    
 },
  }
 </script>
@@ -78,8 +70,8 @@ export default {
   body {
     margin: 0;
     padding: 0;
+    background-color: $four2;
   
-      background-image: url("@/assets/img/bag1.png");
     
     top: 0;
     left: 0;
