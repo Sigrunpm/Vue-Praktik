@@ -75,13 +75,13 @@
             .mig {
                 color: $one;
             display: flex;
-            flex-direction: column;
+            flex-direction: column; 
             height: auto;
             font-weight: bolder;
 
             line-height: 30px;
             border-bottom: 2px;
-            background-image: linear-gradient(to bottom right, $two1, $tree1, $four, $one);
+            background-image: linear-gradient(to bottom right, $four2, $two1, $tree1, $tree1, $four, $one);
             border-bottom-right-radius: 200px;
                 .ned {
                 background-color: $four2;
@@ -148,9 +148,18 @@
             font-size: 8vw;
         }
     
-            @media only screen and (min-width: 750px) {
+            @media only screen and (min-width: 800px) {
             .mig {
                 flex-direction: row;
+                background-image: linear-gradient(to bottom right, $two1, $tree1, $four, $one);
+                .ned {
+                    background-image: linear-gradient(to bottom right, $four2, $four2);
+
+                
+                
+
+            }
+
             }
             .mig-left {
                 width: 50%;

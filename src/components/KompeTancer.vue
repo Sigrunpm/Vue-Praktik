@@ -56,7 +56,8 @@
           <div class="li">
             <ul>
             <li>Første Eksamensprojekt - Portfolio. <br> <a href="https://webarts.dk/praktik/portfolio/index.html" target="_blank">Se projekt 1</a></li>
-                <li>Andet Eksamensprojekt - Fremhæv produktserien wiser. <br> <a href="https://webarts.dk/praktik/wiser/" target="_blank">Se projekt 2</a> <br> <a href="https://webarts.dk/praktik/wiser-stileguide/" target="_blank">Se Stileguide</a></li>
+                <li>Andet Eksamensprojekt - Fremhæv produktserien wiser. <br> <a href="https://webarts.dk/praktik/wiser/" target="_blank">Se projekt 2</a> <br> <br>
+                     <a href="https://webarts.dk/praktik/wiser-stileguide/" target="_blank">Se Stileguide</a></li>
                 
                 <li>Galleri - Fra 1 og 2 Semester. <br> <a href="https://webarts.dk/praktik/galleri/" target="_blank">Galleri</a></li>
                 
@@ -243,13 +244,13 @@ align-items: center;
             color: $one;
         }
 
-        @media only screen and (min-width: 750px) {
+        @media only screen and (min-width: 800px) {
         .hero1 {
             flex-direction: row;
         }
        
         .hero-left1 {
-            width: 50%;
+            width: 33%;
             height: auto;
             border-bottom: none;
             border-left: 2px solid $four;
@@ -259,7 +260,7 @@ align-items: center;
            
         }
         .hero-left2 {
-            width: 100%;
+            width: 50%;
             height: auto;
             border-bottom: none;
             border-left: 2px solid $four;
@@ -269,7 +270,7 @@ align-items: center;
            
         }
         .hero-left3 {
-            width: 100%;
+            width: 50%;
             height: auto;
             border-bottom: none;
             border-left: 2px solid $four;

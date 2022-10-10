@@ -3,12 +3,12 @@
 
 <div class="hero">
         <div class="hero-left">
-            <img class="profil" src="@\assets\img/herony.png" alt="profil">
+            <img class="profil" src="@\assets\img/heronyny.png" alt="profil">
         </div>
         <div class="hero-right">
             <div class="fix">
             <h3 class="op">Hej! Mit navn er Sigrun Mouritsen</h3>
-            <h1 class="mel">Jeg studerer Multimediedesign på UCL</h1>
+            <h1 class="mel">Jeg studerer Multimedie design på UCL</h1>
             <p>
               Jeg søger en praktikplads, i perioden d. 01 Feb. 2023 - d. 30 Mar. 2023 <br>
               Hvis I er interesserede i at have, en multimediedesigner praktikant med UI som valgfag, er jeg den rette. <br> <br>
@@ -88,30 +88,30 @@
         }
         
         .hero-left {
-            
             height: auto;
             text-align: center;
             
         }
 
         .hero-right {
-            
+
             height: auto;
         }
 
         .profil {
-            width: 80%;
+            width: 65%;
             height: auto;
-            margin: 25px;
+            margin: 25px; 
             margin-top: 100px;
-            border-bottom: 50px solid $one;
+            padding: 25px;
+                padding-top: 15px;
+                border-bottom: 10px solid $one;
             border-radius: 100%; 
-            background-image: linear-gradient($one, $four1, $one, $one);
 
         }
 
         .op {
-            color: $four1;
+            color: $four3;
             font-size: 1.5em;
         }
 
@@ -140,7 +140,7 @@
             }
            
 
-        @media only screen and (min-width: 750px) {
+        @media only screen and (min-width: 800px) {
         .hero {
             flex-direction: row;
             
@@ -157,6 +157,12 @@
             margin: 40px;
             padding: 25px;
             margin-top: 100px;
+        }
+        .profil {
+            width: 60%;
+            border-radius: 100%; 
+            padding: 0px;
+
         }
         }
        

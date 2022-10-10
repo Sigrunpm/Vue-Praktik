@@ -121,7 +121,7 @@
         }
 
     
-            @media only screen and (min-width: 750px) {
+            @media only screen and (min-width: 800px) {
             .hero {
                 flex-direction: row;
                 
